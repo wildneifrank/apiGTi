@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "fastify": "^4.17.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts"
+  }
+}
