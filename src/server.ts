@@ -1,10 +1,14 @@
 import fastify from "fastify";
 import { dataRoutes } from "./routes/data";
 import dotenv from "dotenv";
+import cors from "@fastify/cors";
 
 dotenv.config();
 const port = process.env.PORT;
 const app = fastify();
+app.register(cors, {
+  origin: "*",
+});
 
 app.register(dataRoutes);
 
